@@ -417,8 +417,8 @@ function draw() {
     );
     console.log("d");
   }
-
-  image(cat, 147, 432, 44, 32);
+  imageMode(CENTER);
+  image(cat, 168, 450, 44, 32);
   if (
     ball.position.x <= 165 &&
     ball.position.x >= 130 &&
