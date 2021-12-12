@@ -50,7 +50,7 @@ function centerCanvas() {
 function setup() {
   cnv = createCanvas(600, 600);
   centerCanvas();
-
+  rectMode(CENTER);
   //borders 1
   layers.push(
     Bodies.rectangle(300, 600, 600, 20, { isStatic: true, label: "wall" })
@@ -488,7 +488,7 @@ function draw() {
 
   //pink rect
   fill(249, 159, 241);
-  rect(355, 221, 40);
+  rect(375, 241, 40);
   if (
     ball.position.x <= 375 &&
     ball.position.x >= 335 &&
@@ -510,7 +510,7 @@ function draw() {
 
   for (let i = 0; i < 60; i = i + 16) {
     for (let j = 0; j < 30; j = j + 16) {
-      rect(338 + i, 560 + j, 14, 14);
+      rect(344 + i, 567 + j, 14, 14);
     }
   }
   if (
